@@ -1,0 +1,132 @@
+/* Animación de fade-in al cargar la página */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Sin desplazamiento final */
+    }
+  }
+  
+  /* Fondo blanco para todo el contenido */
+  ion-content {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    min-height: 100vh;        /* Asegura que ocupe toda la altura de la pantalla */
+    padding: 20px;
+    --background: #ffffff;    /* Fondo completamente blanco */
+    animation: fadeIn 0.8s ease-out; /* Aparece con una animación suave */
+  }
+  
+  /* Contenedor que mantiene el formulario centrado */
+  .change-password-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;          /* Máximo 400px en pantallas grandes */
+    padding: 20px;
+    margin: 0 auto;            /* Asegura que esté centrado horizontalmente */
+    animation: fadeIn 1s ease-out; /* Animación de aparición */
+  }
+  
+  /* Animación para el logo (pequeño zoom al aparecer) */
+  @keyframes logoZoom {
+    from {
+      transform: scale(0.8);  /* Inicia un poco más pequeño */
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);    /* Termina en tamaño normal */
+      opacity: 1;
+    }
+  }
+  
+  /* Logo superior con animación */
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .change-password-logo {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    animation: logoZoom 1s ease-out; /* Aparece con un pequeño zoom */
+  }
+  
+  /* Tarjeta de cambio de contraseña */
+  .change-password-card {
+    width: 100%;               /* Ocupa todo el ancho disponible */
+    padding: 20px;
+    border-radius: 12px;        /* Bordes redondeados */
+    background-color: #ffffff;  /* Fondo blanco */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    border: 1px solid #e0e0e0;  /* Borde gris claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 1.2s ease-out; /* Animación de aparición */
+  }
+  
+  /* Título de la tarjeta */
+  ion-card-title {
+    font-size: 1.6rem;
+    color: #333333;             /* Color de texto gris oscuro */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Texto descriptivo */
+  p {
+    font-size: 1rem;
+    color: #666666;             /* Texto gris medio */
+    text-align: center;
+  }
+  
+  /* Input fields estilizados */
+  .input-item {
+    --highlight-color-focused: #999999; /* Gris claro cuando está enfocado */
+    margin-bottom: 15px;
+  }
+  
+  /* Animaciones de botones al hacer hover */
+  @keyframes buttonHover {
+    from {
+      transform: scale(1); /* Sin escalado inicial */
+    }
+    to {
+      transform: scale(1.05); /* Pequeño zoom al hacer hover */
+    }
+  }
+  
+  .custom-button {
+    --border-radius: 8px;          /* Bordes suaves */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s; /* Transición suave al hacer hover */
+  }
+  
+  .custom-button[color="primary"] {
+    --background: #333333;         /* Color gris oscuro en el botón principal */
+    --background-activated: #222222;
+    --background-hover: #444444;   /* Color más claro en hover */
+  }
+  
+  .custom-button[color="primary"]:hover {
+    animation: buttonHover 0.2s ease-in-out forwards; /* Zoom al hacer hover */
+  }
+  
+  .custom-button[color="light"] {
+    --background: #f5f5f5;         /* Botón claro con gris suave */
+    --color: #333333;
+    --background-hover: #e0e0e0;   /* Fondo gris claro al pasar el ratón */
+  }
+  
+  .custom-button[color="light"]:hover {
+    animation: buttonHover 0.2s ease-in-out forwards; /* Zoom al hacer hover */
+  }
+  

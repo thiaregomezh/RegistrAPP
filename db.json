@@ -1,0 +1,294 @@
+{
+  "estudiantes": [
+    {
+      "id": "1",
+      "nombre": "Rodrigo Fuentes",
+      "usuario": "rodfuentes",
+      "clave": "12345",
+      "asignaturas": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Ana Gómez",
+      "usuario": "anagomez",
+      "clave": "clave123",
+      "asignaturas": [
+        3,
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Luis Torres",
+      "usuario": "luistorres",
+      "clave": "clave789",
+      "asignaturas": [
+        1,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Camila Perez",
+      "usuario": "camperez",
+      "clave": "clave456",
+      "asignaturas": [
+        2,
+        3,
+        6,
+        10
+      ]
+    },
+    {
+      "id": "5",
+      "nombre": "Carlos Ruiz",
+      "usuario": "carlosruiz",
+      "clave": "clave654",
+      "asignaturas": [
+        4,
+        5,
+        7,
+        8
+      ]
+    }
+  ],
+  "docentes": [
+    {
+      "id": "1",
+      "nombre": "Dr. Carlos Martínez",
+      "usuario": "memo",
+      "clave": "12345",
+      "asignaturas": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "Dra. Ana Pérez",
+      "usuario": "anaperez",
+      "clave": "clave456",
+      "asignaturas": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "Dr. Luis Torres",
+      "usuario": "luistor",
+      "clave": "clave321",
+      "asignaturas": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "Dra. Marta Gómez",
+      "usuario": "martag",
+      "clave": "clave654",
+      "asignaturas": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "5",
+      "nombre": "Dr. Jorge Salas",
+      "usuario": "titito",
+      "clave": "12345",
+      "asignaturas": [
+        10
+      ]
+    }
+  ],
+  "asignaturas": [
+    {
+      "id": "1",
+      "nombre": "Calidad de Software",
+      "profesorId": 1,
+      "seccion": "Sección 1"
+    },
+    {
+      "id": "2",
+      "nombre": "Calidad de Software",
+      "profesorId": 1,
+      "seccion": "Sección 2"
+    },
+    {
+      "id": "3",
+      "nombre": "Programación Móvil",
+      "profesorId": 2,
+      "seccion": "Sección 1"
+    },
+    {
+      "id": "4",
+      "nombre": "Programación Móvil",
+      "profesorId": 2,
+      "seccion": "Sección 2"
+    },
+    {
+      "id": "5",
+      "nombre": "Bases de Datos",
+      "profesorId": 2,
+      "seccion": "Sección 1"
+    },
+    {
+      "id": "6",
+      "nombre": "Desarrollo Web",
+      "profesorId": 3,
+      "seccion": "Sección 1"
+    },
+    {
+      "id": "7",
+      "nombre": "Desarrollo Web",
+      "profesorId": 3,
+      "seccion": "Sección 2"
+    },
+    {
+      "id": "8",
+      "nombre": "Inteligencia Artificial",
+      "profesorId": 4,
+      "seccion": "Sección 1"
+    },
+    {
+      "id": "9",
+      "nombre": "Inteligencia Artificial",
+      "profesorId": 4,
+      "seccion": "Sección 2"
+    },
+    {
+      "id": "10",
+      "nombre": "Ingeniería de Requisitos",
+      "profesorId": 5,
+      "seccion": "Sección 1"
+    }
+  ],
+  "asistencias": [
+    {
+      "id": "1",
+      "estudianteId": 1,
+      "asignaturaId": 1,
+      "fecha": "2024-09-15",
+      "presente": true
+    },
+    {
+      "id": "2",
+      "estudianteId": 2,
+      "asignaturaId": 3,
+      "fecha": "2024-09-16",
+      "presente": false
+    },
+    {
+      "id": "3",
+      "estudianteId": 3,
+      "asignaturaId": 8,
+      "fecha": "2024-09-17",
+      "presente": true
+    },
+    {
+      "id": "4",
+      "estudianteId": 4,
+      "asignaturaId": 6,
+      "fecha": "2024-09-18",
+      "presente": true
+    },
+    {
+      "id": "5",
+      "estudianteId": 5,
+      "asignaturaId": 7,
+      "fecha": "2024-09-19",
+      "presente": false
+    },
+    {
+      "id": "5134",
+      "estudianteId": "1",
+      "asignaturaId": "1",
+      "fecha": "2024-10-31T22:28:16.131Z",
+      "presente": true
+    },
+    {
+      "id": "2c3f",
+      "estudianteId": "1",
+      "asignaturaId": "2",
+      "fecha": "2024-10-31T22:49:37.528Z",
+      "presente": true
+    },
+    {
+      "id": "ce68",
+      "estudianteId": "5",
+      "asignaturaId": "2",
+      "fecha": "2024-10-31T22:52:30.890Z",
+      "presente": true
+    },
+    {
+      "id": "bd29",
+      "estudianteId": "5",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T22:52:38.395Z",
+      "presente": true
+    },
+    {
+      "id": "32be",
+      "estudianteId": "5",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T22:57:58.987Z",
+      "presente": true
+    },
+    {
+      "id": "6976",
+      "estudianteId": "5",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T23:02:18.598Z",
+      "presente": true
+    },
+    {
+      "id": "0f9c",
+      "estudianteId": "5",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T23:02:24.249Z",
+      "presente": true
+    },
+    {
+      "id": "0843",
+      "estudianteId": "5",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T23:02:44.571Z",
+      "presente": true
+    },
+    {
+      "id": "b498",
+      "estudianteId": "1",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T23:05:28.327Z",
+      "presente": true
+    },
+    {
+      "id": "0d77",
+      "estudianteId": "1",
+      "asignaturaId": "10",
+      "fecha": "2024-10-31T23:06:09.455Z",
+      "presente": true
+    },
+    {
+      "id": "8173",
+      "estudianteId": "1",
+      "asignaturaId": "1",
+      "fecha": "2024-11-02T15:09:00.709Z",
+      "presente": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mis Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <!-- Lista de asignaturas -->
+    <ion-item-group *ngFor="let asignatura of asignaturasConAsistencias">
+      <ion-item (click)="toggleAsignatura(asignatura)">
+        <ion-label>
+          <h2>{{ asignatura.nombre }}</h2>
+        </ion-label>
+        <ion-icon slot="end" [name]="asignatura.expanded ? 'chevron-up' : 'chevron-down'"></ion-icon>
+      </ion-item>
+
+      <!-- Lista de asistencias debajo de cada asignatura -->
+      <ion-list *ngIf="asignatura.expanded" class="asistencia-list">
+        <ng-container *ngIf="asignatura.asistencias.length > 0; else sinAsistencias">
+          <ion-item *ngFor="let asistencia of asignatura.asistencias">
+            <ion-label>
+              Fecha: {{ asistencia.fecha | date: 'longDate' }}
+            </ion-label>
+          </ion-item>
+        </ng-container>
+
+        <!-- Mostrar si no hay asistencias registradas -->
+        <ng-template #sinAsistencias>
+          <ion-item>
+            <ion-label>Sin asistencias registradas</ion-label>
+          </ion-item>
+        </ng-template>
+      </ion-list>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

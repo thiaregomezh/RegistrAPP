@@ -1,27 +1,47 @@
-#container {
+ion-content {
+  --background: #f0f2f5; /* Fondo ligero para la página */
+}
+
+.welcome-container {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-bottom: 20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.welcome-text {
+  font-size: 1.2rem;
+  color: #2c3e50;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card {
+  --background: #ffffff;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
-#container a {
-  text-decoration: none;
+ion-card:hover {
+  transform: scale(1.02); /* Efecto de hover para escalar ligeramente la tarjeta */
+}
+
+.small-img {
+  width: 80px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  margin: 10px auto; /* Centra la imagen */
+}
+
+ion-card-title {
+  font-size: 1.4rem;
+  color: #34495e;
+}
+
+ion-card-content {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+ion-button {
+  margin-top: 20px;
 }

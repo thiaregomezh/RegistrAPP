@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Mis Asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <!-- Bucle para listar cada asignatura -->
+    <ion-item *ngFor="let asignatura of asignaturas" (click)="verDetalles(asignatura)">
+      <ion-label>
+        <h2>{{ asignatura.nombre }}</h2>
+        <p>Profesor: {{ asignatura.profesorNombre || 'Sin profesor asignado' }}</p>
+        <p>Sección: {{ asignatura.seccion || 'Sin sección' }}</p>
+      </ion-label>
+
+      <!-- Detalles de la asignatura, visibles solo si mostrarDetalles es verdadero -->
+      <ion-item *ngIf="asignatura.mostrarDetalles">
+        <ion-label>
+          <p>Detalles adicionales sobre la asignatura: {{ asignatura.nombre }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+  </ion-list>
+</ion-content>

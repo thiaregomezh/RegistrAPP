@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Generar QR para Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <ion-label>{{ asignatura.nombre }} - {{ asignatura.seccion }}</ion-label>
+      <ion-button slot="end" (click)="generarQR(asignatura)">Generar QR</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="qrCodeImage" class="qr-code-container">
+    <img [src]="qrCodeImage" alt="QR Code" />
+  </div>
+</ion-content>

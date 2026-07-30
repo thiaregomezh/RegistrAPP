@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cambiar Clave</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="change-password-container">
+    <ion-img class="small-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/2560px-Logo_DuocUC.svg.png"></ion-img>
+
+    <ion-card class="change-password-card">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Actualizar Contraseña</ion-card-title>
+        <p class="ion-text-center">Por favor ingresa tu nueva clave</p>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="changePasswordForm" (ngSubmit)="onSubmit()">
+          <ion-item class="input-item">
+            <ion-label position="floating">Clave Actual</ion-label>
+            <ion-input type="password" formControlName="currentPassword"></ion-input>
+          </ion-item>
+          <ion-text color="danger" *ngIf="changePasswordForm.controls['currentPassword'].invalid && changePasswordForm.controls['currentPassword'].touched">
+            La clave actual es requerida
+          </ion-text>
+
+          <ion-item class="input-item">
+            <ion-label position="floating">Nueva Clave</ion-label>
+            <ion-input type="password" formControlName="newPassword"></ion-input>
+          </ion-item>
+          <ion-text color="danger" *ngIf="changePasswordForm.controls['newPassword'].invalid && changePasswordForm.controls['newPassword'].touched">
+            La nueva clave es requerida y debe tener al menos 6 caracteres
+          </ion-text>
+
+          <ion-item class="input-item">
+            <ion-label position="floating">Confirmar Nueva Clave</ion-label>
+            <ion-input type="password" formControlName="confirmPassword"></ion-input>
+          </ion-item>
+          <ion-text color="danger" *ngIf="changePasswordForm.controls['confirmPassword'].invalid && changePasswordForm.controls['confirmPassword'].touched">
+            La confirmación de la clave es requerida
+          </ion-text>
+
+          <ion-text color="danger" *ngIf="passwordsDoNotMatch">
+            Las contraseñas no coinciden
+          </ion-text>
+
+          <ion-button expand="block" type="submit" [disabled]="changePasswordForm.invalid || passwordsDoNotMatch">
+            Actualizar contraseña
+          </ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

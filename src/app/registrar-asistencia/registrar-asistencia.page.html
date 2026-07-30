@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Registrar Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="scanner-container">
+    <div class="scanner-frame">
+      <ion-button expand="full" color="primary" (click)="startScan()" *ngIf="!scanning">
+        Iniciar Escaneo QR
+      </ion-button>
+      <ion-button expand="full" color="danger" (click)="stopScan()" *ngIf="scanning">
+        Detener Escaneo
+      </ion-button>
+    </div>
+    <div *ngIf="qrData" class="scanner-result">
+      <ion-text color="success">
+        <p>QR detectado: {{ qrData }}</p>
+      </ion-text>
+    </div>
+  </div>
+</ion-content>

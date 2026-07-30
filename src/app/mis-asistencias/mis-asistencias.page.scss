@@ -1,0 +1,53 @@
+ion-content {
+  --background: #ffffff; /* Fondo blanco */
+  padding: 16px;
+}
+
+/* Tarjeta compacta */
+.asistencia-card {
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 12px; /* Espaciado entre tarjetas */
+  padding: 8px;
+  max-width: 350px; /* Ancho máximo para hacerlo más pequeño */
+  margin-left: auto; /* Centrado horizontal */
+  margin-right: auto; /* Centrado horizontal */
+}
+
+/* Estilo del título de la asignatura */
+.asistencia-title {
+  font-size: 1.1rem; /* Tamaño más pequeño */
+  color: #2c3e50; /* Azul oscuro */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Fecha de asistencia */
+.asistencia-fecha {
+  font-size: 0.9rem;
+  color: #7f8c8d; /* Gris claro */
+  text-align: center;
+  margin-bottom: 8px; /* Espacio entre la fecha y el estado */
+}
+
+/* Estado de asistencia (Presente/Ausente) */
+.estado-asistencia {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 12px;
+}
+
+ion-label[color="success"] {
+  color: #28a745; /* Verde para presente */
+}
+
+ion-label[color="danger"] {
+  color: #dc3545; /* Rojo para ausente */
+}
+.asistencia-list {
+  padding-left: 16px;
+  border-left: 2px solid #ccc;
+}
