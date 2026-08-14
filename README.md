@@ -21,23 +21,6 @@ RegistrAPP es una aplicación que permite gestionar la asistencia académica med
 
 **Herramientas:** Visual Studio Code, Git/GitHub y Linux.
 
-## Instalación y ejecución
-
-Clonar el repositorio:
-
-git clone https://github.com/thiaregomezh/RegistrAPP.git
-
-Instalar dependencias:
-
-npm install
-
-Ejecutar el servidor de datos:
-
-node server.js
-
-Ejecutar la aplicación:
-
-ionic serve
 
 ## Contexto académico
 
